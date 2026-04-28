@@ -1,0 +1,17 @@
+def fahrenheit_to_celsius(fahrenheit):
+return(fahrenheit-32)*5/9
+def miles_to_kilometers(miles):
+return(miles*1.609344)
+def pounds_to_kilograms(pounds):
+return pounds*045359237
+def main():
+miles=float(input('Enter miles))
+fahrenhiet=float(input('Enter fahrenheit'))
+pounds=float(input(Enter pounds'))
+
+print('celsius is:',fahrenheit_to_celsius(fahrenheit)
+print('kilometers is:',miles_to_kilometers(miles)
+print('kilograms is:',pounds_to_kilograms(pounds)
+
+if__name__=="__main__":
+main():
