@@ -1,0 +1,24 @@
+def main():
+    filename='c:/temp/testfile.txt'
+    rcdcnt=0
+    rainfall=[]
+    datafile=open(filename,'r')
+    line=datafile.readline()
+    print('Rainfall:')
+    while line !='':
+        print('line before split:'+line)
+        v1 =line.split(':')
+        numbe1 =len(v1)
+        print('number of elements:',numbe1)
+        print('v1:',v1)
+        print('A is:'+ v1[0])
+        print('B is:'+v1[1])
+        print('B v1[1]=',v1[1],'\n')
+        rainfall.append(v1[1])
+        line=datafile.readline()
+        rcdcnt=rcdcnt+1
+        datafile.close()
+        print('\n'+'Number of records read:'+ str(rcdcnt))
+        print('rainfall list:',rainfall)
+        print('---done')
+        main()
